@@ -1,4 +1,4 @@
-.\JAG.SoftwareDeveloperTest\*
-.\main\packages\*
-.\main\src\JAG.SoftwareDeveloperTest\bin\*
-.\main\src\JAG.SoftwareDeveloperTest\obj\*
+/JAG.SoftwareDeveloperTest/*
+/main/packages/*
+/main/src/JAG.SoftwareDeveloperTest/bin/*
+/main/src/JAG.SoftwareDeveloperTest/obj/*
