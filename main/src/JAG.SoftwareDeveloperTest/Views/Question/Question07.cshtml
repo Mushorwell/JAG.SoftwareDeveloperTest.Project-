@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Question 07 - REST";
+}
+<h2>@ViewBag.Title.</h2>
+
+<p>
+    Now that you've got the hang of reading and writing to databases, lets scale up our solution so it can handle more users.<br />
+    <br />
+    Currently, one of the best ways to do this is to introduce a service layer to you systems. A service layer will allow you to split the responsibility of your system. Allowing more clients to connect to the data source and allowing you to distribute your system more effectively to name a just a few benefits.<br/>
+    <br />
+    REST services are services based on the HTTP protocol allowing users to send and receive data via GET, POST and the other HTTP verbs.<br/>
+    <br />
+    Implement a REST service using WebAPI (or similar technology, though I would advise that you do not "hand roll" the service) that will allow the following calls.
+    <ul>
+        <li>
+            <b>Part 1:</b> Get a Lead by Id
+        </li>
+        <li>
+            <b>Part 2:</b> Get all Leads
+        </li>
+        <li>
+            <b>Part 3:</b> Save a Lead
+        </li>
+        <li>
+            <b>Part 4:</b> Update an existing lead
+        </li>
+    </ul>
+    Pay attention to which HTTP verb you associate to each call and add comments indicating why you chose each verb.<br />
+    You should be able to reuse the code that you wrote in Questions 5 and 6 to handle all the DB work.
+
+</p>
+
+<p class="alert-success">
+    Describe your solution and the code here. Also provide example links relevant rest calls.
+</p>
+@Html.ActionLink("Starting to get tired now... push on!", "Index", "Question", null, new { @class = "btn btn-success" })

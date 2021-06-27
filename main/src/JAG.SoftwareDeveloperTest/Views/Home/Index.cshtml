@@ -1,0 +1,86 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>JAG Software Developer Test</h1>
+    <p class="lead">This test will help us identify your strength and areas of development as a future software developer at JAG Method.</p>
+    <p class="content">This test has been created in a story-like-fashion. This means that you need to read through each section and change the relevant pages to display your answers. To help you each question that you need to answer will include a big bright <label class="question">Q</label>.</p>
+    <p>
+        <a href="http://www.jagmethod.com" class="btn btn-primary btn-large">JAG &raquo;</a>
+    </p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            <label class="question">Q</label> 1.1. Find a quite spot, a room filled with music, a coffee shop, whatever makes your ideal work environment. Take a picture of it with your smart phone and update this page.<br /><br />
+            <label class="question">Q</label> 1.2. While you are at it fix the image tag so that confirms to best practices. Please make mention of what changes you have made to the image tag. Add this as bullet points on this page.<br />
+            <br />
+            <img src="@Url.Content("~/Content/Images/MyWorkspace.jpg")"
+                 srcset="~/Content/Images/MyWorkspace.jpg 640w, ~/Content/Images/MyWorkspace-w400.jpg 400w, ~/Content/Images/MyWorkspace-w800.jpg 800w"
+                 sizes="(max-width: 400px) 100vw, (max-width: 990px)"
+                 alt="This is my working area at home with my mounted laptop and display, keyboard and mouse and also a graphics tablet for when I'm feeling creative 😁!"
+                 width="100%" />
+            Changes made to the image tag:
+            <ul>
+                <li>Added a descriptive alt-text to the image tag for web acessibility and also useful for SEO as web crawlers will be able to index this image properly. </li>
+                <li>Optimized the image for the web by drastically reducing its size from the original 3.43MB to 242KB.</li>
+                <li>I have also scaled the image for responsiveness and used srcset and sizes attributes to let the browser choose the appropriate image size depending on the screen size. </li>
+            </ul>
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Connect to the Dev world</h2>
+        <p>
+            You will probably need the Internet for this test so get yourself connected and also download the tools if you need to:
+            <ul>
+                <li><a href="https://www.visualstudio.com/downloads/">Visual Studio</a></li>
+                <li><a href="https://www.microsoft.com/en-cy/sql-server/sql-server-editions-express">SQL server</a></li>
+            </ul>
+            <label class="question">Q</label> 2. List other tools that you love to use here. These are tools that you use every day, that make your life easier, whatever!
+            <br />
+            Tools I like using for dev work:
+            <ul>
+                <li>Git bash for version control</li>
+                <li>Microsoft Todo - for productivity and managing my everyday tasks.</li>
+                <li>Trello - for managing my productivity for project based tasks.</li>
+                <li>Y-productive and toggl track - for managing my time and observing how much time I spend on assigned tasks in relation to projects.</li>
+                <li>Onenote and Microsoft Whiteboard - for brainstorming ideas</li>
+                <li>Affinity Photo, Designer and Publisher - for image manipulation and compression, logo tracing (for high quiality web logos for companies), and sometimes making illustrations and digital art.</li>
+                <li>Brave Browser - My best browser for everyday use which comes with the best anti-tracking tools and adblocks. It's a chrome based browser and therefore also comes with all of chrome's dev tools and is fully compatible with all the addins from chrome</li>
+                <li>Firefox - During development, sometimes I switch between brave and Firefox to see how the styling looks and further work on the styling of the site.</li>
+                <li>Windows Terminal - In place of the ordinary command prompt, I recently discovered windows terminal which is a windows 10 app, I find it to be more customizable than the ordinary command prompt and also more modern with features like multiple tabs.</li>
+                <li>WSL - I have also occassionally worked with the linux subsystem for windows in some of my projects, however now I mostly do all my projects on windows.</li>
+                <li>devhints.io - Website I like referring to for quick cheatsheets on frameworks and tools that I use.</li>
+                <li>Chocolatey - useful package management tool I especially find to be incredibly useful as someone who used to have a linux machine.</li>
+                <li>Slack - I like using for collaboration when I am working with a team. I have also used Microsoft Teams and also have Discord however I'm much more accustomed to slack's workflow</li>
+                <li>draw.io - I find this tool to be really quick and easy to use for creating schematic diagrams, ERDs, Flow diagrams and business processes</li>
+                <li>Adobe XD - For UI/UX I like using XD, usually after I have sketched out my wireframes in onenote. I am also interested in learning figma which as I understand is another useful tool for UI/UX.</li>
+                <li>Webstorm - for javascript framework based projects like React, I also sometimes switch between Webstorm and visual studio code but my main preference is webstorm for node based projects.</li>
+                <li>PowerToys - useful tool to add on to windows for quick-launch and quick run. It also provides other shortcut features like showing you the different key bindings for windows and allowing you to make your own key bindings for window tiling. </li>
+                <li>Spotify and Mediamonkey - I sometimes stream my music otherwise often times enjoy listening to my own extensive music collection from my external hard drive.</li>
+            </ul>
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>On with the show...</h2>
+        <p>
+            So...<br/>
+            <br />
+            Ideally you now in a good place, feel at home in this solution, and are keen to continue.<br />
+            <br />
+            Though there is a chance that you are not keen on continuing, if that is the case feel free to bail out, we wont hold it against you... (much)
+        </p>
+        @Html.ActionLink("I have write MVC!? Bail out!", "Bail", "Home", new { @class = "btn btn-danger" })
+        <br />
+        <br />
+        <p>Please answer all questions that you can answer, use the Internet, ask friends, ask your mom, give it a try. The only wrong answer is no answer.</p>
+        <p>Continue with the test.</p>
+        @Html.ActionLink("Bring it on!", "Test", "Home", new { @class = "btn btn-success" })
+        <br/>
+        <br />
+        
+    </div>
+</div>

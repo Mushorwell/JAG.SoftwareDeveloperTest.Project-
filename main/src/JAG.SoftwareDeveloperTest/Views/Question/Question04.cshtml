@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Question 04 - FizzBuzz";
+}
+<h2>@ViewBag.Title.</h2>
+
+<p>
+    Write some code that prints numbers from 1 to 100.<br />
+    When the number is a multiple of three (3) print "Fizz" instead of the number.<br />
+    When the number is a multiple of five (5) print "Buzz" instead of the number.<br />
+    For numbers that are multiple of three (3) and five (5) print "FizzBuzz" instead of the number.
+</p>
+
+<div class="alert-success">
+    @foreach (string item in ViewBag.NumberList)
+    {
+        <p>@item</p>
+    }
+</div>
+@Html.ActionLink("Still feeling good, next!", "Index", "Question", null, new { @class = "btn btn-success" })

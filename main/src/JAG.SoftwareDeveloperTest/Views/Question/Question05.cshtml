@@ -1,0 +1,71 @@
+﻿@{
+    ViewBag.Title = "Question 05 - Read";
+}
+<h2>@ViewBag.Title.</h2>
+
+<p>
+    In the assets solution folder of the solution you will find a backup of a database called JAGDevTest (JAGDevTest.bak)<br/>
+    Using SQL Management Studio restore the database to your computer.<br/>
+    <br/>
+    You should now have a DB called <b>JAGDevTest</b>. This database contains 3 tables:
+    <ul>
+        <li>Client - contains all clients that you work with</li>
+        <li>Lead - contains all leads that are interested in dealing with your clients</li>
+        <li>LeadDistribtution - contains a records of a lead being sent to a client</li>
+    </ul>
+    <b>Requirements:</b>
+    <ul>
+        <li><b>Part 1</b>: For this question we would like you to retrieve the all leads display them to the results section of this page.</li>
+        <li><b>Part 2</b>: The user should be able to click on a Lead record and view all clients that the lead has been sent to. Build this as drill-down functionality.</li>
+    </ul>
+    <b>Hints:</b>
+    <ul>
+        <li>Please make use of an <a href="http://en.wikipedia.org/wiki/Object-relational_mapping"><b>ORM</b></a> to read this data.</li>
+        <li>Write this code for re-use as you will use it again.</li>
+        <li>Only display necessary information to the screen.</li>
+    </ul>
+</p>
+
+<h3>Results</h3>
+<div class="alert-success">
+    <table class="table">
+        <tr>
+            <th>
+                @Html.Label("First Name")
+            </th>
+            <th>
+                @Html.Label("Last Name")
+            </th>
+            <th>
+                @Html.Label("Cell Number")
+            </th>
+            <th>
+                @Html.Label("Email")
+            </th>
+            <th>
+                @Html.Label("Date Created")
+            </th>
+        </tr>
+        @foreach (var item in ViewBag.leads)
+        {
+            <tr>
+                <td>
+                    @item.FirstName
+                </td>
+                <td>
+                    @item.LastName
+                </td>
+                <td>
+                    @item.CellNumber
+                </td>
+                <td>
+                    @item.Email
+                </td>
+                <td>
+                    @item.CreatedDateTime
+                </td>
+            </tr>
+        }
+    </table>
+</div>
+@Html.ActionLink("Now we're getting there. Challenge me!", "Index", "Question", null, new { @class = "btn btn-success" })

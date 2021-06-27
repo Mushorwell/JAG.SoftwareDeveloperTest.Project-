@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1231
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assets", "assets", "{13D2C8C0-D9A9-403A-A294-B8B40CA1E0D6}"
+	ProjectSection(SolutionItems) = preProject
+		assets\JAGDevTest.bak = assets\JAGDevTest.bak
+		assets\JAGDevTest.sql = assets\JAGDevTest.sql
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JAG.SoftwareDeveloperTest", "src\JAG.SoftwareDeveloperTest\JAG.SoftwareDeveloperTest.csproj", "{57836E89-5FC1-4A38-8C03-03B986A8B138}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{3243BFD2-CAE9-4773-9E82-0CD9B13284E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "iDesign", "iDesign", "{17D2B6A5-D848-4F3B-8031-F3A7753ADC67}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServiceModelEx", "ServiceModelEx", "{24D364B0-C8FB-45CA-A895-538914F764FB}"
+	ProjectSection(SolutionItems) = preProject
+		lib\iDesign\ServiceModelEx\ServiceModelEx.dll = lib\iDesign\ServiceModelEx\ServiceModelEx.dll
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57836E89-5FC1-4A38-8C03-03B986A8B138}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57836E89-5FC1-4A38-8C03-03B986A8B138}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57836E89-5FC1-4A38-8C03-03B986A8B138}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57836E89-5FC1-4A38-8C03-03B986A8B138}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{17D2B6A5-D848-4F3B-8031-F3A7753ADC67} = {3243BFD2-CAE9-4773-9E82-0CD9B13284E0}
+		{24D364B0-C8FB-45CA-A895-538914F764FB} = {17D2B6A5-D848-4F3B-8031-F3A7753ADC67}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AD21AB06-1654-4D83-8235-AD57F59AD763}
+	EndGlobalSection
+EndGlobal

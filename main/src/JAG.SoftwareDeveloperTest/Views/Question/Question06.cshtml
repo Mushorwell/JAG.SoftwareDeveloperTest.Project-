@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "Question 06 - Write";
+}
+<h2>@ViewBag.Title.</h2>
+
+<p>
+    <h3>Part 1 - The CUD of CRUD</h3>
+    Great! You now have code that can read data from a DB and display it to the user. Now show how you would go about updating that data.<br />
+    <br />
+    <b>Requirements:</b>
+    <ul>
+        <li>Create a simple UI that allows the user to create a new lead.</li>
+        <li>As usual add the UI results section below.</li>
+        <li>On successful creation of a record, read it back from the database and display it to the UI.</li>
+    </ul>
+
+    <h3>Part 2 - Validation</h3>
+    A big part of building systems is making it easier for the user to use them. Add the following validation rules to the form that you created.
+    <ul>
+        <li>
+            Firstname cannot be longer than 50 characters
+        </li>
+        <li>
+            Cell number must be <b>unique</b>
+        </li>
+        <li>
+            Email address should be a valid email address
+        </li>
+    </ul>
+    Make sure that the validation looks good, possibly even use a validation framework.
+</p>
+
+<h3>Results</h3>
+<b>NB!</b> If you have made changed to the DB please script them and include them in the solution.
+<p class="alert-success">
+    Display your answer here.
+</p>
+@Html.ActionLink("That took some time. What else you got?", "Index", "Question", null, new { @class = "btn btn-success" })

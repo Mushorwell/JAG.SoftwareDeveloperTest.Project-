@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "Question 08 - Async";
+}
+<h2>@ViewBag.Title.</h2>
+
+<p>
+    Dealing with lots of request at the same can be hard. Imagine having every person you know talking to you at once.... Well, that is how some computers feel.
+    To prevent them from committing harakiri we let Async come to their aid. Using Async we can listen to each person for a short amount of time, 
+    dispatch another part of our brain to deal with what they said and then focusing on the next person. <em>(don't try this at home!)</em>
+    <br />
+    <br />
+    Below is a button that needs to do a lot of work. When it is clicked your poor pc has a lot on it's mind (make sure your CPU fan works!).<br /> This task takes so long in fact, that the user will not get a response from the site when the button is clicked.<br />
+    <br />
+    <b>Requirements:</b>
+    <ul>
+        <li>
+            <b>Part 1:</b> Update this page so that when the button below is clicked the button is disabled, and waiting indicator is show.
+        </li>
+        <li>
+            The user should not be able to click the button again, until the long running process is complete.
+        </li>
+        <li>
+            <b>Part 2:</b> When the long running task is complete, update the page to re-enable the button and display the answer. (pst... you may need to decrease the value passed to ParallelPartitionerPi to test)
+        </li>
+    </ul>
+
+    @Html.ActionLink("Run long running task", "Question08LongRunningTask", "Question", new { @class = "btn btn-warning" })
+
+</p>
+
+<p class="alert-success">
+    The result is @ViewBag.Result
+</p>
+@Html.ActionLink("WOOHOO I AM DONE", "Contact", "Home", null, new { @class = "btn btn-success" })
